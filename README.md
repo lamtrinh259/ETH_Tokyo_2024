@@ -1,3 +1,4 @@
+# ETH_Tokyo_2024
 # Zeto, a UTXO based privacy-preserving token toolkit using Zero Knowledge Proofs
 
 This project hosts the multiple patterns to implement privacy preserving tokens on EVM. The patterns all share the same basic architectural concepts:
