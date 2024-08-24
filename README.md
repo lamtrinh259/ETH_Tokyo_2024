@@ -1,4 +1,9 @@
 # ETH_Tokyo_2024
+
+We're building a silent payment solution that allows users on EVM chains to send payments to another person in completely private and anonomyous way, meaning only the sender and recipient would know the details of the actual transaction.
+
+Silent payment is something that is already executable on Bitcoin. For this to work on Ethereum, we are basically borrowing an open-source library that allows us to create a UTXO based privacy-preserving token using ZKP.
+
 # Zeto, a UTXO based privacy-preserving token toolkit using Zero Knowledge Proofs
 
 This project hosts the multiple patterns to implement privacy preserving tokens on EVM. The patterns all share the same basic architectural concepts:
