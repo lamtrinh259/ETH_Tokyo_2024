@@ -38,19 +38,27 @@ const config: HardhatUserConfig = {
       accounts: keys,
       gasPrice: 0,
     },
-    arb: {
-      url:"https://arb-sepolia.g.alchemy.com/v2/svFZH2X06Ju5hAy2Q_9aIAQ4QcJxd3ap",
-      accounts: [
-          process.env.PK
-      ]
-    },
-    scroll: {
+    scrollSepolia: {
       url:"https://scroll-sepolia.public.blastapi.io",
       accounts: [
-        process.env.PK
-      ],
-      gas:99999999
+        "f581e09146dc555821defda40505b319ace18e5262141258d1abb0ee1eb60dfe"
+      ]
     }
+  },
+  etherscan: {
+    apiKey: {
+      scrollSepolia: "XN5VTWB95ZTFMNITS4KVWS29T1J62UFIJE",
+    },
+    customChains: [
+      {
+        network: 'scrollSepolia',
+        chainId: 534351,
+        urls: {
+          apiURL: "https://api-sepolia.scrollscan.com/api",
+          browserURL: 'https://sepolia.scrollscan.com/',
+        }
+      }
+    ]
   }
 };
 
