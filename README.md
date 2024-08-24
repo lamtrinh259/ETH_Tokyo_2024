@@ -14,10 +14,10 @@ Transactions on EVM chains are completely open for everyone to see, so users can
 We have created an easy-to-use app that allows users to send payment to a recipient anonymously after logging in.
 
 ### Technology architecture and customer flow
-
+![Blind Payments Architecture](Architecture.png)
 
 ## User Flow
-![Blind Payments Architecture](Architecture.png)
+
 
 ## Future Work
 Some thoughts for how the whole project can be built out further:
