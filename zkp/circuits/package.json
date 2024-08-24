@@ -1,0 +1,17 @@
+{
+  "name": "zeto-circuits",
+  "version": "0.0.1",
+  "description": "Circom library for ZK circuits for use with Zeto based privacy-preserving tokens",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  },
+  "scripts": {
+    "gen": "node gen.js"
+  },
+  "devDependencies": {
+    "axios": "^1.7.3",
+    "p-limit": "^6.1.0",
+    "yargs": "^17.7.2"
+  }
+}
