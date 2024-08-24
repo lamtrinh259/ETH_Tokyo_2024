@@ -39,7 +39,28 @@ const config: HardhatUserConfig = {
       url: "http://localhost:8545",
       accounts: keys,
       gasPrice: 0,
+    },
+    scrollSepolia: {
+      url:"https://scroll-sepolia.public.blastapi.io",
+      accounts: [
+        "f581e09146dc555821defda40505b319ace18e5262141258d1abb0ee1eb60dfe"
+      ]
     }
+  },
+  etherscan: {
+    apiKey: {
+      scrollSepolia: "XN5VTWB95ZTFMNITS4KVWS29T1J62UFIJE",
+    },
+    customChains: [
+      {
+        network: 'scrollSepolia',
+        chainId: 534351,
+        urls: {
+          apiURL: "https://api-sepolia.scrollscan.com/api",
+          browserURL: 'https://sepolia.scrollscan.com/',
+        }
+      }
+    ]
   }
 };
 
