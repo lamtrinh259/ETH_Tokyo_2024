@@ -17,7 +17,7 @@ We have created an easy-to-use app that allows users to send payment to a recipi
 
 
 ## User Flow
-
+![Blind Payments Architecture](Architecture.png)
 
 ## Future Work
 Some thoughts for how the whole project can be built out further:
