@@ -18,8 +18,6 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@openzeppelin/hardhat-upgrades";
 import crypto from "crypto";
-require("@nomicfoundation/hardhat-toolbox");
-require("@nomicfoundation/hardhat-foundry");
 
 const keys = [
   crypto.randomBytes(32).toString("hex"),
@@ -39,6 +37,19 @@ const config: HardhatUserConfig = {
       url: "http://localhost:8545",
       accounts: keys,
       gasPrice: 0,
+    },
+    arb: {
+      url:"https://arb-sepolia.g.alchemy.com/v2/svFZH2X06Ju5hAy2Q_9aIAQ4QcJxd3ap",
+      accounts: [
+          process.env.PK
+      ]
+    },
+    scroll: {
+      url:"https://scroll-sepolia.public.blastapi.io",
+      accounts: [
+        process.env.PK
+      ],
+      gas:99999999
     }
   }
 };
