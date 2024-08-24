@@ -18,7 +18,8 @@
     "hardhat": "^2.22.2",
     "maci-crypto": "1.1.1",
     "snarkjs": "^0.7.3",
-    "zeto-js": "file:../zkp/js"
+    "zeto-js": "file:../zkp/js",
+    "@types/snarkjs": "^0.7.8"
   },
   "dependencies": {
     "@iden3/contracts": "^2.0.5",
@@ -26,6 +27,14 @@
     "@openzeppelin/contracts": "^5.0.1",
     "@openzeppelin/contracts-upgradeable": "^5.0.2",
     "@openzeppelin/hardhat-upgrades": "^3.2.1",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2",
+    "maci-crypto": "1.1.1",
+    "snarkjs": "^0.7.3",
+    "yup": "^1.4.0",
+    "circomlib": "^2.0.5",
+    "poseidon-lite": "^0.2.0",
+    "wagmi": "^2.12.0"
   }
 }
